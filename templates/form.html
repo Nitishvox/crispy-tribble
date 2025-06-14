@@ -1,0 +1,29 @@
+<p id="result" style="border: 2px solid black; padding: 10px; width: 200px; text-align: center; background-color: #f8f8f8;">
+   Recommended Strategy: <span id="strategy_text"></span>
+</p>
+
+<script>
+    async function getStrategy() {
+        let inputData = document.getElementById("lap_data").value.trim();
+
+        if (!inputData) {
+            document.getElementById("strategy_text").innerText = "Please enter lap data.";
+            return;
+        }
+
+        try {
+            let response = await fetch("http://127.0.0.1:5000/predict", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ input_text: inputData })
+            });
+
+            if (!response.ok) throw new Error("Server error: " + response.status);
+
+            let data = await response.json();
+            document.getElementById("strategy_text").innerText = data.strategy;
+        } catch (error) {
+            document.getElementById("strategy_text").innerText = "Error: " + error.message;
+        }
+    }
+</script>

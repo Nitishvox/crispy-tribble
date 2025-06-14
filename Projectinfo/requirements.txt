@@ -1,0 +1,12 @@
+pip install flask flask-cors transformers torch requests
+
+
+flask
+flask-cors
+transformers
+torch
+requests
+
+
+#run this 
+python app.py

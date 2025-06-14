@@ -1,0 +1,42 @@
+AI-Powered Race Strategy Predictor - Built by Nitish M.
+This project was a fusion of AI and motorsports analytics, designed to provide real-time race strategy recommendations based on lap data, tire condition, and weather factors. The goal was to create a Flask-powered web application that could dynamically predict whether a driver should pit or hold position, helping simulate race strategies efficiently.
+
+Project Overview & Motivation
+I wanted to apply my expertise in Python, AI model deployment, and Flask to a racing analytics project, integrating machine learning models for real-time predictions. By leveraging transformers-based models, I developed an AI that interprets lap conditions and provides optimal race strategies.
+
+
+1.Training the Model
+I fine-tuned a transformers-based sequence classification model, training it on race data parameters such as:
+
+Lap Delta (Time difference with competitors)
+
+Lap Number (Current progress in the race)
+
+Position (Current standing)
+
+Tire Condition (Good, Worn, Critical)
+
+Weather Conditions (Dry, Rain, Cloudy)
+
+Using Hugging Face’s AutoModelForSequenceClassification, the model learned to predict whether a driver should pit or hold position based on race dynamics.  
+
+2.Designing the Web Interface
+Built a clean user interface using HTML where users enter lap data, click "Use Example Data", and get a strategy recommendation instantly.
+
+3.Adding JavaScript for Interactivity
+Implemented JavaScript (logic.js) to: Auto-fill race data with fillExample(). Send lap data to Flask API via getStrategy(). Display strategy suggestions dynamically.
+
+4.Styling the UI
+Styled everything in style.css for a sleek, race-themed design, ensuring clear visuals, interactive buttons, and a polished result box.
+
+5.Final Deployment & Testing
+With everything set up, I: Tested various race conditions to validate predictions.Fixed fetch errors & CORS issues to ensure smooth API calls. Successfully deployed the app locally via Flask (python app.py).
+
+6.
+Lessons Learned & Future Improvements
+This project allowed me to: Deepen my understanding of AI model deployment in Flask. Integrate interactive frontend elements with dynamic predictions. Design a real-world motorsport analytics application.
+
+Conclusion
+Building this F1 Race Strategy Predictor was a thrilling challenge that combined AI, web development, and motorsports analytics into a cohesive, interactive experience. The model successfully interprets race conditions and provides reliable strategy recommendations, making it a powerful tool for simulating competitive decision-making in real-time racing.
+
+This project reflects my passion for AI model deployment and racing analytics, and I’m excited to continue refining it further!

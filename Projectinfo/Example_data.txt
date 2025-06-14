@@ -1,0 +1,25 @@
+Scenario 1: Early Race Decision 
+{
+    "input_text": "Lap Delta: 1000, Lap Number: 5, Position: 10, Tire Condition: Good, Weather: Dry"
+}
+
+Scenario 2: Mid-Race Tire Wear
+
+{
+    "input_text": "Lap Delta: 600, Lap Number: 20, Position: 4, Tire Condition: Worn, Weather: Dry"
+}
+
+Scenario 3: Rain Strategy
+
+{
+    "input_text": "Lap Delta: 800, Lap Number: 35, Position: 6, Tire Condition: Moderate, Weather: Rain"
+}
+
+
+Scenario 4: Late-Race Hold
+
+{
+    "input_text": "Lap Delta: 300, Lap Number: 45, Position: 2, Tire Condition: Good, Weather: Cloudy"
+}
+
+

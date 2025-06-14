@@ -1,0 +1,17 @@
+AI-Powered Race Strategy Predictor
+Created by: Nitish M. | Student Developer
+
+
+Overview
+This project is a Flask-powered web application that provides real-time race strategy recommendations based on lap data, tire condition, and weather factors. Using transformers-based AI models, it predicts whether a driver should pit or hold position based on race dynamics.
+
+How to Run the Project
+Clone the repository: git clone repo-url.git
+cd race-strategy-ai
+
+pip install -r requirements.txt
+
+python app.py
+
+  http://127.0.0.1:5000/
+  

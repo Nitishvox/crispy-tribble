@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>F1 Strategy AI</title>
+    <script src="{{ url_for('static', filename='JS/logic.js') }}"></script> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+</head>
+<body>
+    <h2>Race Strategy Predictor</h2>
+
+    <!-- Input Box with Example Data Button -->
+    <div class="input-box">
+        <input type="text" id="lap_data" placeholder="Enter lap info...">
+        <button onclick="fillExample()">Use Example Data</button>
+    </div>
+
+    <!-- Get Strategy Button -->
+    <button onclick="getStrategy()">Get Strategy</button>
+
+    <!-- Strategy Output -->
+    <p id="result"></p>
+
+    <!-- Credit Section Styled Properly -->
+    <footer>
+        <p>Created by <strong>Nitish M.</strong></p>
+        <p>Student | Contact: <a href="mailto:nitishvox@gmail.com">nitishvox@gmail.com</a></p>
+    </footer>
+</body>
+</html>
